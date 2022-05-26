@@ -180,4 +180,5 @@ body {
 
 .header__content-link--active {
     font-weight: 700;
+    color: #fff;
 }
