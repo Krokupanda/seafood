@@ -295,7 +295,7 @@ body {
 }
 
 
-.seafood {
+.seafood-box {
     background-image: url(../images/seafood-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -308,13 +308,13 @@ body {
     color: #fff;
 }
 
-.seafood__items {
+.seafood-box__items {
     display: flex;
     justify-content: space-around;
 
 }
 
-.seafood__item {
+.seafood-box__item {
     width: 180px;
     min-height: 165px;
     display: flex;
