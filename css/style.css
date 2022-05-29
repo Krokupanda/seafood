@@ -204,13 +204,14 @@ body {
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
+    font-weight: 400;
+    cursor: pointer;
 }
 
 .product__name-item.slick-current {
     font-weight: 700;
     color: #001E64;
     font-size: 36px;
-    line-height: 38px;
 }
 
 .product__name-item+.product__name-item {
@@ -229,8 +230,66 @@ body {
     border: none;
     background-color: transparent;
     padding: 0;
+    cursor: pointer;
 }
 
 .product__content {
     width: 600px;
+}
+
+.product__content-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__content-img {
+    object-fit: cover;
+}
+
+.product__content-list {
+    width: 291px;
+    list-style: none;
+}
+
+.product__content-item {
+    margin-bottom: 30px;
+}
+
+.product__content-item span {
+    display: block;
+    margin-bottom: 10px;
+    color: #001E64;
+}
+
+.product__content-title {
+    font-family: 'Roboto Slab', serif;
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #001E64;
+    margin-bottom: 20px;
+}
+
+.product__content-text {
+    margin-bottom: 25px;
+}
+
+.product__content-btn {
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    padding: 12px 85px;
+    background-color: transparent;
+    text-transform: uppercase;
+    border: 1px solid #001E64;
+    border-radius: 20px;
+    display: inline-block;
+    color: #001E64;
+    cursor: pointer;
+}
+
+.slick-list.draggable {
+    padding: 58px 0 !important;
 }

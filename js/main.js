@@ -8,12 +8,13 @@ $(function () {
     });
 
     $('.product__name').slick({
-        slidesToShow: 6,
+        slidesToShow: 4,
         slidesToScroll: 1,
         focusOnSelect: true,
         //fade: true,
         asNavFor: '.product__content',
         vertical: true,
+        centerMode: true,
         prevArrow: '<button type="button" class="product-prev"><img src="images/product-prev.svg" alt="previous button"></button>',
         nextArrow: '<button type="button" class="product-next"><img src="images/product-next.svg" alt="previous button"></button>',
     });
@@ -21,7 +22,8 @@ $(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         asNavFor: '.product__name',
-        fade: true
+        fade: true,
+        arrows: false
     });
 
 });
