@@ -64,6 +64,7 @@ body {
 }
 
 .menu__link:hover {
+    transition: all 0.2s ease;
     border-bottom: 2px solid #001E64;
 }
 
@@ -435,10 +436,14 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 25px;
+
 }
 
 .footer-social__item+.footer-social__item {
     margin-left: 10px;
 }
 
-.footer-social__link {}
+.footer-social__item:hover path {
+    transition: all 0.3s ease-in;
+    fill: #001E64;
+}
