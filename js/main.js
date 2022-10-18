@@ -22,12 +22,32 @@ $(function () {
         slidesToShow: 4,
         slidesToScroll: 1,
         focusOnSelect: true,
-        //fade: true,
+        centerPadding: '58px',
         asNavFor: '.product__content',
         vertical: true,
         centerMode: true,
         prevArrow: '<button type="button" class="product-prev"><img src="images/product-prev.svg" alt="previous button"></button>',
         nextArrow: '<button type="button" class="product-next"><img src="images/product-next.svg" alt="previous button"></button>',
+        responsive: [
+            {
+                breakpoint: 891,
+                settings: {
+                    arrows: false,
+                    vertical: false,
+                    slidesToShow: 3,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 461,
+                settings: {
+                    arrows: false,
+                    vertical: false,
+                    slidesToShow: 1,
+                    dots: true,
+                }
+            },
+        ]
     });
     $('.product__content').slick({
         slidesToShow: 1,

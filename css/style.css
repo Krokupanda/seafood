@@ -305,9 +305,9 @@ body {
     color: #fff;
 }
 
-.slick-list.draggable {
+/* .slick-list.draggable {
     padding: 58px 0 !important;
-}
+} */
 
 
 .seafood-box {
@@ -500,6 +500,12 @@ body {
     background-color: #001E64;
 }
 
+@media (max-width: 1160px) {
+    .product__name {
+        width: 350px;
+    }
+}
+
 @media (max-width: 1100px) {
     .menu__list {
         position: absolute;
@@ -536,6 +542,56 @@ body {
         display: block;
         padding: 20px 0;
     }
+
+    .product__name {
+        width: 250px;
+    }
+}
+
+@media (max-width: 890px) {
+    .product__inner {
+        display: block;
+    }
+
+    .product__content {
+        margin: 0 auto;
+    }
+
+    .product__name {
+        width: 100%;
+        padding-top: 0;
+        margin-bottom: 80px;
+    }
+
+    .product__name-item+.product__name-item {
+        margin-top: 0;
+    }
+
+    .product__name .slick-dots {
+        left: 0;
+        right: 0;
+        top: 80px;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .product__name .slick-dots button {
+        width: 10px;
+        height: 10px;
+        font-size: 0;
+        padding: 0;
+        border-radius: 50%;
+        background-color: #c4c4c4;
+        margin: 0 5px;
+    }
+
+    .product__name .slick-active button {
+        background-color: #001E64;
+    }
+
+    .slick-list .draggable {
+        padding: 0;
+    }
 }
 
 @media (max-width: 745px) {
@@ -545,6 +601,31 @@ body {
         text-align: center;
         padding-left: 0;
         line-height: 66px;
+    }
+
+    .seafood-box {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .product__content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .product__content-box {
+        display: block;
+    }
+
+    .product__content-list {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .product__content-img {
+        margin: 0 auto;
     }
 }
 
@@ -575,6 +656,14 @@ body {
     .title {
         font-size: 34px;
         line-height: 44px;
+    }
+
+    .product__content-btn {
+        padding: 12px 55px;
+    }
+
+    .product {
+        padding-top: 50px;
     }
 }
 
